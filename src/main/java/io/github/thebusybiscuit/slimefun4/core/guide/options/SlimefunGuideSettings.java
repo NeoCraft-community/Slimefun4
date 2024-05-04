@@ -7,7 +7,6 @@ import java.util.Optional;
 import javax.annotation.Nonnull;
 import javax.annotation.ParametersAreNonnullByDefault;
 
-import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
@@ -24,7 +23,6 @@ import io.github.thebusybiscuit.slimefun4.core.services.sounds.SoundEffect;
 import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
 import io.github.thebusybiscuit.slimefun4.utils.ChatUtils;
 import io.github.thebusybiscuit.slimefun4.utils.ChestMenuUtils;
-import io.github.thebusybiscuit.slimefun4.utils.NumberUtils;
 import io.github.thebusybiscuit.slimefun4.utils.SlimefunUtils;
 
 import me.mrCookieSlime.CSCoreLibPlugin.general.Inventory.ChestMenu;
@@ -115,7 +113,7 @@ public final class SlimefunGuideSettings {
             ChatColor.GREEN + locale.getMessage(p, "guide.title.versions"),
             "&7&o" + locale.getMessage(p, "guide.tooltips.versions-notice"),
             "",
-            "&fMinecraft: &a" + Bukkit.getBukkitVersion(),
+            "&fMinecraft: &a***",
             "&fSlimefun: &a" + Slimefun.getVersion()),
             ChestMenuUtils.getEmptyClickHandler()
         );
@@ -124,9 +122,6 @@ public final class SlimefunGuideSettings {
         // @formatter:off
         menu.addItem(6, new CustomItemStack(Material.COMPARATOR, 
            "&e" + locale.getMessage(p, "guide.title.source"),
-           "", "&7Last Activity: &a" + NumberUtils.getElapsedTime(github.getLastUpdate()) + " ago",
-           "&7Forks: &e" + github.getForks(),
-           "&7Stars: &e" + github.getStars(),
            "",
            "&7&oSlimefun 4 is a community project,",
            "&7&othe source code is available on GitHub",

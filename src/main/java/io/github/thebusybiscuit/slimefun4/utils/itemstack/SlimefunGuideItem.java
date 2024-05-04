@@ -37,7 +37,7 @@ public class SlimefunGuideItem extends ItemStack {
         SlimefunGuideMode type = implementation.getMode();
         lore.add(type == SlimefunGuideMode.CHEAT_MODE ? ChatColors.color("&4&lOnly openable by Admins") : "");
         lore.add(ChatColors.color("&eRight Click &8\u21E8 &7Browse Items"));
-        lore.add(ChatColors.color("&eShift + Right Click &8\u21E8 &7Open Settings / Credits"));
+        lore.add(ChatColors.color("&eShift + Right Click &8\u21E8 &7Open Settings"));
 
         meta.setLore(lore);
 
