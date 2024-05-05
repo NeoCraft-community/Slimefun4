@@ -238,11 +238,11 @@ public final class SlimefunItemSetup {
         DefaultItemGroups itemGroups = new DefaultItemGroups();
 
         // @formatter:off (We will need to refactor this one day)
-        new SlimefunItem(itemGroups.weapons, SlimefunItems.GRANDMAS_WALKING_STICK, RecipeType.ENHANCED_CRAFTING_TABLE,
+        new SlimefunItem(itemGroups.tools, SlimefunItems.GRANDMAS_WALKING_STICK, RecipeType.ENHANCED_CRAFTING_TABLE,
         new ItemStack[] {null, new ItemStack(Material.OAK_LOG), null, null, new ItemStack(Material.OAK_LOG), null, null, new ItemStack(Material.OAK_LOG), null})
         .register(plugin);
         
-        new SlimefunItem(itemGroups.weapons, SlimefunItems.GRANDPAS_WALKING_STICK, RecipeType.ENHANCED_CRAFTING_TABLE,
+        new SlimefunItem(itemGroups.tools, SlimefunItems.GRANDPAS_WALKING_STICK, RecipeType.ENHANCED_CRAFTING_TABLE,
         new ItemStack[] {new ItemStack(Material.LEATHER), new ItemStack(Material.OAK_LOG), new ItemStack(Material.LEATHER), null, new ItemStack(Material.OAK_LOG), null, null, new ItemStack(Material.OAK_LOG), null})
         .register(plugin);
 
@@ -382,7 +382,7 @@ public final class SlimefunItemSetup {
             SoundEffect.SLIME_BOOTS_FALL_SOUND)
         .register(plugin);
 
-        new SwordOfBeheading(itemGroups.weapons, SlimefunItems.SWORD_OF_BEHEADING, RecipeType.ENHANCED_CRAFTING_TABLE,
+        new SwordOfBeheading(itemGroups.tools, SlimefunItems.SWORD_OF_BEHEADING, RecipeType.ENHANCED_CRAFTING_TABLE,
         new ItemStack[] {null, new ItemStack(Material.EMERALD), null, SlimefunItems.MAGIC_LUMP_2, new ItemStack(Material.EMERALD), SlimefunItems.MAGIC_LUMP_2, null, new ItemStack(Material.BLAZE_ROD), null})
         .register(plugin);
 
@@ -692,7 +692,7 @@ public final class SlimefunItemSetup {
         new ItemStack[] {SlimefunItems.CLOTH, SlimefunItems.CLOTH, SlimefunItems.CLOTH, SlimefunItems.CHAIN, null, SlimefunItems.CHAIN, null, null, null})
         .register(plugin);
 
-        new HologramProjector(itemGroups.technicalGadgets, SlimefunItems.HOLOGRAM_PROJECTOR, RecipeType.ENHANCED_CRAFTING_TABLE,
+        new HologramProjector(itemGroups.tools, SlimefunItems.HOLOGRAM_PROJECTOR, RecipeType.ENHANCED_CRAFTING_TABLE,
         new ItemStack[] {null, SlimefunItems.POWER_CRYSTAL, null, SlimefunItems.ALUMINUM_BRASS_INGOT, SlimefunItems.ELECTRIC_MOTOR, SlimefunItems.ALUMINUM_BRASS_INGOT, null, SlimefunItems.ALUMINUM_BRASS_INGOT, null}, 
         new SlimefunItemStack(SlimefunItems.HOLOGRAM_PROJECTOR, 3))
         .register(plugin);
@@ -976,21 +976,21 @@ public final class SlimefunItemSetup {
         new ItemStack[] {null, SlimefunItems.CLOTH, null, SlimefunItems.CLOTH, SlimefunItems.LEAD_INGOT, SlimefunItems.CLOTH, null, SlimefunItems.CLOTH, null}, new SlimefunItemStack(SlimefunItems.REINFORCED_CLOTH, 2))
         .register(plugin);
 
-        new HazmatArmorPiece(itemGroups.armor, SlimefunItems.SCUBA_HELMET, RecipeType.ARMOR_FORGE,
+        new HazmatArmorPiece(itemGroups.tools, SlimefunItems.SCUBA_HELMET, RecipeType.ARMOR_FORGE,
         new ItemStack[] {new ItemStack(Material.ORANGE_WOOL), SlimefunItems.REINFORCED_CLOTH, new ItemStack(Material.ORANGE_WOOL), SlimefunItems.REINFORCED_CLOTH, new ItemStack(Material.GLASS_PANE), SlimefunItems.REINFORCED_CLOTH, null, null, null},
         new PotionEffect[] {new PotionEffect(PotionEffectType.WATER_BREATHING, 300, 1)})
         .register(plugin);
 
-        new HazmatArmorPiece(itemGroups.armor, SlimefunItems.HAZMAT_CHESTPLATE, RecipeType.ARMOR_FORGE,
+        new HazmatArmorPiece(itemGroups.tools, SlimefunItems.HAZMAT_CHESTPLATE, RecipeType.ARMOR_FORGE,
         new ItemStack[] {new ItemStack(Material.ORANGE_WOOL), null, new ItemStack(Material.ORANGE_WOOL), SlimefunItems.REINFORCED_CLOTH, SlimefunItems.REINFORCED_CLOTH, SlimefunItems.REINFORCED_CLOTH, new ItemStack(Material.BLACK_WOOL), SlimefunItems.REINFORCED_CLOTH, new ItemStack(Material.BLACK_WOOL)},
         new PotionEffect[] {new PotionEffect(PotionEffectType.FIRE_RESISTANCE, 300, 1)})
         .register(plugin);
 
-        new HazmatArmorPiece(itemGroups.armor, SlimefunItems.HAZMAT_LEGGINGS, RecipeType.ARMOR_FORGE,
+        new HazmatArmorPiece(itemGroups.tools, SlimefunItems.HAZMAT_LEGGINGS, RecipeType.ARMOR_FORGE,
         new ItemStack[] {new ItemStack(Material.BLACK_WOOL), SlimefunItems.REINFORCED_CLOTH, new ItemStack(Material.BLACK_WOOL), SlimefunItems.REINFORCED_CLOTH, null, SlimefunItems.REINFORCED_CLOTH, SlimefunItems.REINFORCED_CLOTH, null, SlimefunItems.REINFORCED_CLOTH}, new PotionEffect[0])
         .register(plugin);
 
-        new HazmatArmorPiece(itemGroups.armor, SlimefunItems.HAZMAT_BOOTS, RecipeType.ARMOR_FORGE,
+        new HazmatArmorPiece(itemGroups.tools, SlimefunItems.HAZMAT_BOOTS, RecipeType.ARMOR_FORGE,
         new ItemStack[] {SlimefunItems.REINFORCED_CLOTH, null, SlimefunItems.REINFORCED_CLOTH, SlimefunItems.REINFORCED_CLOTH, null, SlimefunItems.REINFORCED_CLOTH, new ItemStack(Material.BLACK_WOOL), null, new ItemStack(Material.BLACK_WOOL)}, new PotionEffect[0])
         .register(plugin);
 
@@ -1864,7 +1864,7 @@ public final class SlimefunItemSetup {
         .setProcessingSpeed(1)
         .register(plugin);
 
-        new Multimeter(itemGroups.technicalGadgets, SlimefunItems.MULTIMETER, RecipeType.ENHANCED_CRAFTING_TABLE,
+        new Multimeter(itemGroups.tools, SlimefunItems.MULTIMETER, RecipeType.ENHANCED_CRAFTING_TABLE,
         new ItemStack[] {SlimefunItems.COPPER_INGOT, null, SlimefunItems.COPPER_INGOT, null, SlimefunItems.REDSTONE_ALLOY, null, null, SlimefunItems.GOLD_6K, null})
         .register(plugin);
 

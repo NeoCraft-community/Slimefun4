@@ -34,7 +34,7 @@ class DefaultItemGroups {
 
     // Standard Item Groups
     protected final ItemGroup weapons = new ItemGroup(new NamespacedKey(Slimefun.instance(), "weapons"), new CustomItemStack(SlimefunItems.BLADE_OF_VAMPIRES, "&7Weapons"), 1);
-    protected final ItemGroup tools = new ItemGroup(new NamespacedKey(Slimefun.instance(), "tools"), new CustomItemStack(SlimefunItems.SMELTERS_PICKAXE, "&7Tools"), 1);
+    protected final ItemGroup tools = new ItemGroup(new NamespacedKey(Slimefun.instance(), "tools"), new CustomItemStack(Material.FISHING_ROD, "&c&lTools"), 1);
     protected final ItemGroup usefulItems = new ItemGroup(new NamespacedKey(Slimefun.instance(), "items"), new CustomItemStack(SlimefunItems.BACKPACK_MEDIUM, "&7Useful Items"), 1);
     protected final ItemGroup basicMachines = new ItemGroup(new NamespacedKey(Slimefun.instance(), "basic_machines"), new CustomItemStack(SlimefunItems.ENHANCED_CRAFTING_TABLE, "&7Basic Machines"), 1);
     protected final ItemGroup food = new ItemGroup(new NamespacedKey(Slimefun.instance(), "food"), new CustomItemStack(SlimefunItems.FORTUNE_COOKIE, "&7Food"), 2);
